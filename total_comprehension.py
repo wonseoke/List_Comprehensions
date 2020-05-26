@@ -33,3 +33,13 @@ for i in my_numbers:
         f_list2.append(i)
 print("--------------")
 print("FILTERED LIST W/ MATCHES: " + str(f_list2))
+
+
+
+mf_list = []
+for i in mapped_list:
+    if i > 399:
+        mf_list.append(i)
+
+print("--------------")
+print("MAPPED AND FILTERED LIST: " + str(mf_list))
