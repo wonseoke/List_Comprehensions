@@ -18,13 +18,18 @@ print("--------------")
 print("Mapped List: " + str(mapped_list))
 
 
+f_list1 = []
+for i in my_numbers:
+    if i > 3:
+        f_list1.append(i)
 
-'''arr = [1, 2, 3, 4]
-arr2 = []
+print("--------------")
+print("FILTERED LIST W/ MATCHES: " + str(f_list1))
 
-for i in arr:
-  arr2.append(i * 100)
 
-arr #> [1, 2, 3, 4]
-arr2 #> [100, 200, 300, 400]
-'''
+f_list2 = []
+for i in my_numbers:
+    if i > 8:
+        f_list2.append(i)
+print("--------------")
+print("FILTERED LIST W/ MATCHES: " + str(f_list2))
