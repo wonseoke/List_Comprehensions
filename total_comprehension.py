@@ -9,7 +9,7 @@ print("TOTAL COMPREHENSION...")
 
 # TODO: write python code here
 
-
+'''
 mapped_list = []
 for i in my_numbers:
     mapped_list.append(i * 100)
@@ -41,5 +41,26 @@ for i in mapped_list:
     if i > 399:
         mf_list.append(i)
 
+print("--------------")
+print("MAPPED AND FILTERED LIST: " + str(mf_list))
+'''
+
+
+mapped_list = [i * 100 for i in my_numbers]
+print("--------------")
+print("Mapped List: " + str(mapped_list))
+
+
+f_list1 = [i for i in my_numbers if i > 3]
+print("--------------")
+print("FILTERED LIST W/ MATCHES: " + str(f_list1))
+
+
+f_list2 = [i for i in my_numbers if i > 3000]
+print("--------------")
+print("FILTERED LIST W/O MATCHES: " + str(f_list2))
+
+
+mf_list = [i * 100 for i in my_numbers if i > 3]
 print("--------------")
 print("MAPPED AND FILTERED LIST: " + str(mf_list))
